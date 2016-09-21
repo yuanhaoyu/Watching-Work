@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  font-size: 14px; }
+
+li {
+  list-style: none; }
+
+input:-webkit-autofill {
+  background-color: white !important; }
+
+a {
+  text-decoration: none !important; }
+
+.r {
+  float: right; }
+
+.l {
+  float: left; }
+
+.cl {
+  width: 0;
+  height: 0;
+  clear: both; }
+
+.ct {
+  margin: 0 auto; }
+
+.p0 {
+  padding: 0 !important; }
+
+.pl0 {
+  padding-left: 0 !important; }
+
+.pr0 {
+  padding-right: 0 !important; }
+
+.pt0 {
+  padding-top: 0 !important; }
+
+.pb0 {
+  padding-bottom: 0 !important; }
+
+.m0 {
+  margin: 0 !important; }
+
+.ml0 {
+  margin-left: 0 !important; }
+
+.mr0 {
+  margin-right: 0 !important; }
+
+.mt0 {
+  margin-top: 0 !important; }
+
+.mb0 {
+  margin-bottom: 0 !important; }
+
+.blue {
+  color: #698ebf !important; }
+
+.orange {
+  color: orange !important; }
+
+.green {
+  color: #00b51d !important; }
+
+.uv {
+  opacity: 0.6; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url(./font/iconfont.eot);
+  /* IE9*/
+  src: url(./font/iconfont.eot?#iefix) format("embedded-opentype"), url(./font/iconfont.woff) format("woff"), url(./font/iconfont.ttf) format("truetype"), url(./font/iconfont.svg#iconfont) format("svg");
+  /* iOS 4.1- */ }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-fanhui:before {
+  content: "\E61A"; }
+
+.icon-tianjia:before {
+  content: "\E600"; }
+
+.icon-fanhui1:before {
+  content: "\E601"; }
+
+.icon-shuaxin:before {
+  content: "\E602"; }
+
+.icon-xingxing:before {
+  content: "\E603"; }
+
+.icon-fenlei:before {
+  content: "\E604"; }
+
+.icon-renwu:before {
+  content: "\E618"; }
+
+.icon-delete:before {
+  content: "\E605"; }
+
+.icon-tianjia1:before {
+  content: "\E61B"; }
+
+.icon-fankui:before {
+  content: "\E606"; }
+
+.icon-sousuo:before {
+  content: "\E607"; }
+
+.icon-shanchu:before {
+  content: "\E608"; }
+
+.icon-xitongshezhi:before {
+  content: "\E609"; }
+
+.icon-gengduo:before {
+  content: "\E617"; }
+
+.icon-fanhui2:before {
+  content: "\E61C"; }
+
+.icon-wode:before {
+  content: "\E60A"; }
+
+.icon-gengduo1:before {
+  content: "\E60B"; }
+
+.icon-mima:before {
+  content: "\E60C"; }
+
+.icon-gengduo2:before {
+  content: "\E61D"; }
+
+.icon-tongzhi:before {
+  content: "\E60D"; }
+
+.icon-anniu2:before {
+  content: "\E60E"; }
+
+.icon-anniu1:before {
+  content: "\E60F"; }
+
+.icon-gengduo3:before {
+  content: "\E610"; }
+
+.icon-baocun:before {
+  content: "\E611"; }
+
+.icon-yonghu:before {
+  content: "\E612"; }
+
+.icon-xie:before {
+  content: "\E613"; }
+
+.icon-20:before {
+  content: "\E614"; }
+
+.icon-icon:before {
+  content: "\E615"; }
+
+.icon-shouyeshouye:before {
+  content: "\E616"; }
+
+.icon-renwu1:before {
+  content: "\E619"; }
+
+[v-cloak] {
+  display: none; }
+
+body {
+  padding-top: 55px;
+  padding-bottom: 60px;
+  background-color: #f9f9f9; }
+
+#header {
+  width: 100%;
+  height: 54px;
+  border-bottom: 1px solid #30a080;
+  position: fixed;
+  top: 0;
+  background: #00b51d;
+  z-index: 999; }
+  #header .headerL {
+    width: 25%;
+    height: 54px; }
+    #header .headerL .icon-fanhui {
+      line-height: 54px;
+      font-size: 1.6rem;
+      margin-left: 8px;
+      color: #EDEDED; }
+  #header .headerR {
+    width: 25%;
+    height: 54px; }
+  #header .title {
+    width: 50%;
+    height: 54px;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 54px;
+    color: white; }
+
+#content {
+  width: 100%; }
+  #content .user {
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #F4F4F4;
+    margin-bottom: 20px; }
+    #content .user .userImg {
+      width: 30%; }
+      #content .user .userImg .userImgBox {
+        width: 60px;
+        height: 60px;
+        border: 1px solid black;
+        border-radius: 50%;
+        overflow: hidden; }
+        #content .user .userImg .userImgBox > img {
+          width: 100%;
+          height: 100%; }
+    #content .user .userInfo {
+      width: 59%;
+      margin-top: 5px; }
+      #content .user .userInfo .userName {
+        margin-left: 5px;
+        font-size: 1.2rem; }
+      #content .user .userInfo .Lv {
+        margin-left: 5px; }
+    #content .user .icon-gengduo {
+      margin-top: 8px;
+      font-size: 2rem;
+      width: 11%;
+      color: #555555; }
+  #content .store {
+    border-top: 1px solid 	#F4F4F4; }
+  #content .store, #content .message, #content .payMoney, #content .aboutUs {
+    background-color: white;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid 	#F4F4F4; }
+    #content .store > div, #content .message > div, #content .payMoney > div, #content .aboutUs > div {
+      width: 90%;
+      font-size: 1rem;
+      text-indent: 16px; }
+    #content .store .icon-gengduo, #content .message .icon-gengduo, #content .payMoney .icon-gengduo, #content .aboutUs .icon-gengduo {
+      font-size: 1.4rem;
+      width: 10%;
+      color: #555555; }
+  #content .loginOut {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #EE2C2C;
+    height: 42px;
+    line-height: 42px;
+    position: fixed;
+    font-size: 1rem;
+    bottom: 0;
+    opacity: 0.9; }

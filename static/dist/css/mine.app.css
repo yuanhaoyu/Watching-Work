@@ -1,0 +1,283 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  font-size: 14px; }
+
+li {
+  list-style: none; }
+
+input:-webkit-autofill {
+  background-color: white !important; }
+
+a {
+  text-decoration: none !important; }
+
+.r {
+  float: right; }
+
+.l {
+  float: left; }
+
+.cl {
+  width: 0;
+  height: 0;
+  clear: both; }
+
+.ct {
+  margin: 0 auto; }
+
+.p0 {
+  padding: 0 !important; }
+
+.pl0 {
+  padding-left: 0 !important; }
+
+.pr0 {
+  padding-right: 0 !important; }
+
+.pt0 {
+  padding-top: 0 !important; }
+
+.pb0 {
+  padding-bottom: 0 !important; }
+
+.m0 {
+  margin: 0 !important; }
+
+.ml0 {
+  margin-left: 0 !important; }
+
+.mr0 {
+  margin-right: 0 !important; }
+
+.mt0 {
+  margin-top: 0 !important; }
+
+.mb0 {
+  margin-bottom: 0 !important; }
+
+.blue {
+  color: #698ebf !important; }
+
+.orange {
+  color: orange !important; }
+
+.green {
+  color: #00b51d !important; }
+
+.uv {
+  opacity: 0.6; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url(./font/iconfont.eot);
+  /* IE9*/
+  src: url(./font/iconfont.eot?#iefix) format("embedded-opentype"), url(./font/iconfont.woff) format("woff"), url(./font/iconfont.ttf) format("truetype"), url(./font/iconfont.svg#iconfont) format("svg");
+  /* iOS 4.1- */ }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-fanhui:before {
+  content: "\E61A"; }
+
+.icon-tianjia:before {
+  content: "\E600"; }
+
+.icon-fanhui1:before {
+  content: "\E601"; }
+
+.icon-shuaxin:before {
+  content: "\E602"; }
+
+.icon-xingxing:before {
+  content: "\E603"; }
+
+.icon-fenlei:before {
+  content: "\E604"; }
+
+.icon-renwu:before {
+  content: "\E618"; }
+
+.icon-delete:before {
+  content: "\E605"; }
+
+.icon-tianjia1:before {
+  content: "\E61B"; }
+
+.icon-fankui:before {
+  content: "\E606"; }
+
+.icon-sousuo:before {
+  content: "\E607"; }
+
+.icon-shanchu:before {
+  content: "\E608"; }
+
+.icon-xitongshezhi:before {
+  content: "\E609"; }
+
+.icon-gengduo:before {
+  content: "\E617"; }
+
+.icon-fanhui2:before {
+  content: "\E61C"; }
+
+.icon-wode:before {
+  content: "\E60A"; }
+
+.icon-gengduo1:before {
+  content: "\E60B"; }
+
+.icon-mima:before {
+  content: "\E60C"; }
+
+.icon-gengduo2:before {
+  content: "\E61D"; }
+
+.icon-tongzhi:before {
+  content: "\E60D"; }
+
+.icon-anniu2:before {
+  content: "\E60E"; }
+
+.icon-anniu1:before {
+  content: "\E60F"; }
+
+.icon-gengduo3:before {
+  content: "\E610"; }
+
+.icon-baocun:before {
+  content: "\E611"; }
+
+.icon-yonghu:before {
+  content: "\E612"; }
+
+.icon-xie:before {
+  content: "\E613"; }
+
+.icon-20:before {
+  content: "\E614"; }
+
+.icon-icon:before {
+  content: "\E615"; }
+
+.icon-shouyeshouye:before {
+  content: "\E616"; }
+
+.icon-renwu1:before {
+  content: "\E619"; }
+
+[v-cloak] {
+  display: none; }
+
+body {
+  background-color: #292744; }
+
+#content {
+  float: left;
+  width: 100%; }
+  #content #personal {
+    width: 100%;
+    height: 158px;
+    background-color: #2e2947;
+    padding-top: 25px;
+    overflow: hidden; }
+    #content #personal .personal-header {
+      width: 100%;
+      height: 75px; }
+      #content #personal .personal-header .more {
+        margin-left: 10px; }
+        #content #personal .personal-header .more > i {
+          color: #4777a7;
+          font-size: 1.8rem;
+          font-weight: bold; }
+      #content #personal .personal-header .personal-img {
+        margin: 0 auto;
+        width: 54px;
+        height: 54px;
+        border-radius: 50%; }
+        #content #personal .personal-header .personal-img > img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%; }
+    #content #personal .personal-info {
+      margin: 0 auto;
+      width: 80%;
+      text-align: center;
+      color: white;
+      font-size: 18px;
+      line-height: 28px;
+      position: relative;
+      animation: rightTran 2s;
+      -moz-animation: rightTran 2s;
+      /* Firefox */
+      -webkit-animation: rightTran 2s;
+      /* Safari 和 Chrome */
+      -o-animation: rightTran 2s;
+      /* Opera */ }
+  #content #task-other {
+    width: 100%;
+    height: 60px;
+    background-color: #393151; }
+  #content #task-center {
+    width: 100%;
+    height: 400px;
+    background-color: #2e2947; }
+  #content #task-other2 {
+    width: 100%;
+    height: 120px;
+    background-color: #393151; }
+
+#aboutMine {
+  float: left;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #292744;
+  z-index: 990;
+  width: 0%;
+  height: 100%;
+  display: none;
+  padding-top: 80px; }
+  #aboutMine > div {
+    background-color: #292744;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    text-align: center; }
+    #aboutMine > div > a {
+      color: white; }
+
+#addTask {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  background-color: #3bbb81;
+  text-align: center;
+  font-size: 1rem;
+  color: white; }
+  #addTask > a {
+    color: white; }
+
+@-webkit-keyframes rightTran {
+  0% {
+    right: -1000px; }
+  50% {
+    right: 0; } }
+
+@keyframes rightTran {
+  0% {
+    right: -1000px; }
+  50% {
+    right: 0; } }

@@ -1,0 +1,89 @@
+@import "./default.scss";
+body{
+ background-color: rgba(41,39,68,1);
+}
+
+header{
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  background-color: rgba(41,39,68,0.5);
+  border-bottom: 1px solid #211d39;
+
+}
+#main{
+  width: 100%;
+  .taskList{
+    &>article{
+      margin-top: 8px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-bottom: 1px solid #211d39;
+      .taskTitle{
+        margin-top:0;
+        margin-bottom: 0;
+        color: white;
+        opacity: 0.9;
+        font-size: 1.1rem;
+        line-height: 0.9rem;
+      }
+      .taskDes{
+        margin-top: 12px;
+        margin-bottom: 6px;
+        color: white;
+        opacity: 0.8;
+        font-size: 0.8rem;
+      }
+      .taskProgress{
+        width: 50%;
+        height: 15px;
+        line-height: 15px;
+        font-size: 0.8rem;
+        background-color: white;
+        margin-bottom: 10px;
+        text-align: center;
+        border-radius: 6px;
+      }
+    }
+
+  }
+}
+
+#back {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+    background-color: #6cdd62;
+    opacity: 0.9;
+    animation: rightTran2 2s;
+    -moz-animation: rightTran2 2s;
+    /* Firefox */
+    -webkit-animation: rightTran2 2s;
+    /* Safari 和 Chrome */
+    -o-animation: rightTran2 2s;
+    /* Opera */
+    .iconfont {
+        margin: 0 auto;
+        color: white;
+        position: relative;
+        left: 10px;
+        top: 8px;
+        font-size: 1.8rem;
+    }
+}
+
+@keyframes rightTran2 {
+    0% {
+        right: -1000px;
+    }
+    50% {
+        right: 30px;
+    }
+}

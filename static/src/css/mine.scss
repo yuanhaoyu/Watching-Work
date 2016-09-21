@@ -1,0 +1,118 @@
+@import "./default.scss";
+body{
+ background-color: rgba(41,39,68,1);
+}
+#content{
+  float: left;
+  width: 100%;
+  #personal {
+      width: 100%;
+      height: 158px;
+      background-color: #2e2947;
+      padding-top: 25px;
+      overflow: hidden;
+      .personal-header {
+          width: 100%;
+          height: 75px;
+          .more {
+            margin-left: 10px;
+              & > i {
+                  color: #4777a7;
+                  font-size: 1.8rem;
+                  font-weight: bold;
+              }
+          }
+          .personal-img {
+              margin: 0 auto;
+              width: 54px;
+              height: 54px;
+              border-radius: 50%;
+              & > img {
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 50%;
+              }
+          }
+      }
+      .personal-info{
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        line-height: 28px;
+        position: relative;
+        animation: rightTran 2s;
+        -moz-animation: rightTran 2s;
+        /* Firefox */
+        -webkit-animation: rightTran 2s;
+        /* Safari 和 Chrome */
+        -o-animation: rightTran 2s;
+        /* Opera */
+      }
+  }
+
+  #task-other{
+    width: 100%;
+    height: 60px;
+    background-color: #393151;
+  }
+  #task-center{
+    width: 100%;
+    height: 400px;
+    background-color: #2e2947;
+  }
+  #task-other2{
+    width: 100%;
+    height: 120px;
+    background-color: #393151;
+  }
+}
+
+#aboutMine{
+  float: left;
+  position:relative;
+  top:0;
+  left: 0;
+  background-color: rgba(41,39,68,1);
+  z-index:990;
+  width: 0%;
+  height: 100%;
+  display: none;
+  padding-top: 80px;
+  &>div{
+    background-color: rgba(41,39,68,1);
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+    &>a{
+      color: white;
+    }
+  }
+}
+
+#addTask{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  background-color: #3bbb81;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  &>a{
+    color: white;
+  }
+}
+//--
+@keyframes rightTran {
+    0% {
+        right: -1000px;
+    }
+    50% {
+        right: 0;
+    }
+}

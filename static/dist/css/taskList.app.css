@@ -1,0 +1,259 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  font-size: 14px; }
+
+li {
+  list-style: none; }
+
+input:-webkit-autofill {
+  background-color: white !important; }
+
+a {
+  text-decoration: none !important; }
+
+.r {
+  float: right; }
+
+.l {
+  float: left; }
+
+.cl {
+  width: 0;
+  height: 0;
+  clear: both; }
+
+.ct {
+  margin: 0 auto; }
+
+.p0 {
+  padding: 0 !important; }
+
+.pl0 {
+  padding-left: 0 !important; }
+
+.pr0 {
+  padding-right: 0 !important; }
+
+.pt0 {
+  padding-top: 0 !important; }
+
+.pb0 {
+  padding-bottom: 0 !important; }
+
+.m0 {
+  margin: 0 !important; }
+
+.ml0 {
+  margin-left: 0 !important; }
+
+.mr0 {
+  margin-right: 0 !important; }
+
+.mt0 {
+  margin-top: 0 !important; }
+
+.mb0 {
+  margin-bottom: 0 !important; }
+
+.blue {
+  color: #698ebf !important; }
+
+.orange {
+  color: orange !important; }
+
+.green {
+  color: #00b51d !important; }
+
+.uv {
+  opacity: 0.6; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url(./font/iconfont.eot);
+  /* IE9*/
+  src: url(./font/iconfont.eot?#iefix) format("embedded-opentype"), url(./font/iconfont.woff) format("woff"), url(./font/iconfont.ttf) format("truetype"), url(./font/iconfont.svg#iconfont) format("svg");
+  /* iOS 4.1- */ }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-fanhui:before {
+  content: "\E61A"; }
+
+.icon-tianjia:before {
+  content: "\E600"; }
+
+.icon-fanhui1:before {
+  content: "\E601"; }
+
+.icon-shuaxin:before {
+  content: "\E602"; }
+
+.icon-xingxing:before {
+  content: "\E603"; }
+
+.icon-fenlei:before {
+  content: "\E604"; }
+
+.icon-renwu:before {
+  content: "\E618"; }
+
+.icon-delete:before {
+  content: "\E605"; }
+
+.icon-tianjia1:before {
+  content: "\E61B"; }
+
+.icon-fankui:before {
+  content: "\E606"; }
+
+.icon-sousuo:before {
+  content: "\E607"; }
+
+.icon-shanchu:before {
+  content: "\E608"; }
+
+.icon-xitongshezhi:before {
+  content: "\E609"; }
+
+.icon-gengduo:before {
+  content: "\E617"; }
+
+.icon-fanhui2:before {
+  content: "\E61C"; }
+
+.icon-wode:before {
+  content: "\E60A"; }
+
+.icon-gengduo1:before {
+  content: "\E60B"; }
+
+.icon-mima:before {
+  content: "\E60C"; }
+
+.icon-gengduo2:before {
+  content: "\E61D"; }
+
+.icon-tongzhi:before {
+  content: "\E60D"; }
+
+.icon-anniu2:before {
+  content: "\E60E"; }
+
+.icon-anniu1:before {
+  content: "\E60F"; }
+
+.icon-gengduo3:before {
+  content: "\E610"; }
+
+.icon-baocun:before {
+  content: "\E611"; }
+
+.icon-yonghu:before {
+  content: "\E612"; }
+
+.icon-xie:before {
+  content: "\E613"; }
+
+.icon-20:before {
+  content: "\E614"; }
+
+.icon-icon:before {
+  content: "\E615"; }
+
+.icon-shouyeshouye:before {
+  content: "\E616"; }
+
+.icon-renwu1:before {
+  content: "\E619"; }
+
+[v-cloak] {
+  display: none; }
+
+body {
+  background-color: #292744; }
+
+header {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  background-color: rgba(41, 39, 68, 0.5);
+  border-bottom: 1px solid #211d39; }
+
+#main {
+  width: 100%; }
+  #main .taskList > article {
+    margin-top: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #211d39; }
+    #main .taskList > article .taskTitle {
+      margin-top: 0;
+      margin-bottom: 0;
+      color: white;
+      opacity: 0.9;
+      font-size: 1.1rem;
+      line-height: 0.9rem; }
+    #main .taskList > article .taskDes {
+      margin-top: 12px;
+      margin-bottom: 6px;
+      color: white;
+      opacity: 0.8;
+      font-size: 0.8rem; }
+    #main .taskList > article .taskProgress {
+      width: 50%;
+      height: 15px;
+      line-height: 15px;
+      font-size: 0.8rem;
+      background-color: white;
+      margin-bottom: 10px;
+      text-align: center;
+      border-radius: 6px; }
+
+#back {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 25px;
+  right: 30px;
+  background-color: #6cdd62;
+  opacity: 0.9;
+  animation: rightTran2 2s;
+  -moz-animation: rightTran2 2s;
+  /* Firefox */
+  -webkit-animation: rightTran2 2s;
+  /* Safari 和 Chrome */
+  -o-animation: rightTran2 2s;
+  /* Opera */ }
+  #back .iconfont {
+    margin: 0 auto;
+    color: white;
+    position: relative;
+    left: 10px;
+    top: 8px;
+    font-size: 1.8rem; }
+
+@-webkit-keyframes rightTran2 {
+  0% {
+    right: -1000px; }
+  50% {
+    right: 30px; } }
+
+@keyframes rightTran2 {
+  0% {
+    right: -1000px; }
+  50% {
+    right: 30px; } }

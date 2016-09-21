@@ -1,0 +1,76 @@
+@import "./default.scss";
+body {
+    background-color: rgba(41,39,68,1);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+}
+#taskContent {
+    padding: 3%;
+    background-color: #e9ce39;
+    width: 94%;
+    height: 110px;
+    border-radius: 4px;
+    position: relative;
+    .taskName {
+        color: #faf9e5;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    .taskDes {
+        color: #faf9e5;
+        font-size: 0.8rem;
+    }
+    .taskTime{
+      position: absolute;
+      bottom: 5px;
+      color: #faf9e5;
+    }
+}
+#commitNum{
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 120px;
+  height: 20px;
+  line-height:20px;
+  color: white;
+  background-color: #30284d;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+#commitContent{
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+  padding-top: 8px;
+  .commitList{
+    width: 100%;
+    height: 33px;
+    position: relative;
+    background-color: #4e5a6a;
+    margin-bottom: 4px;
+    border-radius: 1px;
+    .icon-renwu{
+      margin-left: 5px;
+      color: white;
+      line-height:33px;
+    }
+    .commitMsg{
+      color: white;
+      line-height:33px;
+      height: 33px;
+      margin-left: 8px;
+      width: 63%;
+      font-size: 0.8rem;
+      overflow: hidden;
+    }
+    .commitTime{
+      color: white;
+      position: absolute;
+      right: 5px;
+      line-height:33px;
+      font-size: 0.8rem;
+    }
+  }
+}

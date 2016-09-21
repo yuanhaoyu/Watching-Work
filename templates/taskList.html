@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Watching Work</title>
+    <link rel="stylesheet" href="/dist/css/taskList.app.css">
+</head>
+
+<body id="app" v-cloak>
+    {% raw %}
+    <header>
+      Task-num : {{taskNum}}
+    </header>
+    <div id="main">
+        <section class="taskList" v-for="taskList in taskInfo" @click="taskMore(taskList.taskId)">
+            <article>
+                <p class="taskTitle">{{taskList.taskTitle}}</p>
+                <p class="taskDes">{{taskList.taskDes}}</p>
+                <div class="taskProgress" data={{taskList.taskProgress}}>50%</div>
+            </article>
+        </section>
+    </div>
+
+    <div id="back" @click="back">
+        <i class="iconfont icon-fanhui"></i>
+    </div>
+    {% endraw %}
+    <script type="text/javascript" src="/dist/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/dist/lib/vue/dist/vue.min.js"></script>
+    <script type="text/javascript" src="/dist/js/taskList.app.js"></script>
+</body>
+
+</html>

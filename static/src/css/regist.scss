@@ -1,0 +1,48 @@
+@import "./default.scss";
+body {
+    background-color: #252339;
+    padding-left: 42px;
+    padding-right: 42px;
+}
+.userInput {
+    // display: inline-block!important;
+    // vertical-align:middle;
+    margin-top: 10rem;
+    input {
+        width: 100%;
+        height: 40px;
+        line-height: 45px;
+        outline: none;
+        background-color: #252339;
+        border: 0;
+        border-top: 1px solid #4c596c;
+        color: #b2b9c4;
+        font-size: 14px;
+        text-indent: 2.5rem;
+    }
+    .invitecode {
+        border-bottom: 1px solid #4c596c;
+    }
+    button {
+        background-color: #d24a58;
+        margin-top: 40px;
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        color: #201a36;
+        font-size: 15px;
+        border: 0;
+    }
+}
+
+#other{
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  color: #b2b9c4;
+  a{
+    margin-left: 2px;
+    color: #d24a58;
+  }
+}

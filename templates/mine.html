@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Watching Work</title>
+    <link rel="stylesheet" href="/dist/css/mine.app.css">
+</head>
+
+<body id="app">
+  {% raw %}
+    <section id="aboutMine" data="0">
+        <div class="index"><a href="/myIndex">我的首页</a></div>
+        <div class="mine"><a href="">我的信息</a></div>
+        <div class="taskCenter"><a href="/taskList">任务中心</a></div>
+        <div class="money"><a href="/money">来点赞助</a></div>
+        <div class="aboutus"><a href="http://llamastudio.cn/">关于我们</a></div>
+        <div class="system" @click="">系统设置</div>
+        <div class="loginOut" @click="loginOut">退出登录</div>
+
+    </section>
+
+    <div id="content" v-cloak>
+        <section id="personal">
+            <div class="personal-header">
+                <div class="l more" @click="moreShow">
+                    <i class="iconfont icon-gengduo"></i>
+                </div>
+                <div class="personal-img">
+                    <img src={{userMsg.userImg}} alt="">
+                </div>
+            </div>
+            <article class="personal-info">
+                Hello {{userMsg.userName}}! Thanks use our sofeware. Let`s Do it!
+            </article>
+        </section>
+
+        <section id="task-other">
+
+        </section>
+        <section id="task-center"></section>
+        <section id="task-other2"></section>
+    </div>
+
+
+    <section id="addTask"><a href="/taskList">My Task</a></section>
+  {% endraw %}
+    <script type="text/javascript" src="/dist/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/dist/lib/vue/dist/vue.min.js"></script>
+    <script type="text/javascript" src="/dist/lib/hammerjs/hammer.min.js"></script>
+    <script type="text/javascript" src="/dist/js/mine.app.js"></script>
+</body>
+
+</html>

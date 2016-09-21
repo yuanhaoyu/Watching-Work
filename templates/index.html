@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Watching Work</title>
+    <link rel="stylesheet" href="/dist/css/index.app.css">
+</head>
+
+<body id="app" v-cloak>
+  {% raw %}
+
+    <div id="home">
+        <a href="/mine"><i class="iconfont icon-wode"><d> {{userMsg.userName}} </d></i></a>
+    </div>
+
+    <section id="content" data="1">
+        <article class="content-list" data="1" v-show="cl1" @click="taskMore(taskInfo[0].taskId)">
+            <p class="task-title m0">{{taskInfo[0].taskTitle}}</p>
+            <p class="task-content m0">{{taskInfo[0].taskDes}}</p>
+        </article>
+        <article class="content-list" data="2" v-show="cl3" @click="taskMore(taskInfo[1].taskId)">
+            <p class="task-title m0">{{taskInfo[1].taskTitle}}</p>
+            <p class="task-content m0">{{taskInfo[1].taskDes}}</p>
+        </article>
+        <article class="content-list" data="3" v-show="cl3" @click="taskMore(taskInfo[2].taskId)">
+            <p class="task-title m0">{{taskInfo[2].taskTitle}}</p>
+            <p class="task-content m0">{{taskInfo[2].taskDes}}</p>
+        </article>
+        <ul class="show-page p0">
+            <li class="cicle-list cicle-active" data="1"></li>
+            <li class="cicle-list" data="2"></li>
+            <li class="cicle-list" data="3"></li>
+        </ul>
+    </section>
+
+    <div id="add" @click="addTask">
+        <i class="iconfont icon-tianjia"></i>
+    </div>
+
+    <section id="add-content" v-show="addFlag">
+      <form>
+        <button type="button" name="button" id="close" @click="closeTask">X</button>
+        <input type="text" name="taskTitle" id="taskTitle" placeholder="请输入新建任务名称" maxlength="16">
+        <div id="task-kind">
+          <ul class="p0 m0">
+            <li id="simple" @click="taskKindChecked"></li>
+          </ul>
+        </div>
+        <textarea name="taskDes" id="taskDes" rows="6" placeholder="请输入新建任务简介" cols="40"  maxlength="180"></textarea>
+        <button id="sure" @click="newTask">确 定</button>
+      </form>
+    </section>
+
+    <script type="text/javascript" src="/dist/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/dist/lib/vue/dist/vue.min.js"></script>
+    <script type="text/javascript" src="/dist/lib/hammerjs/hammer.min.js"></script>
+    <script type="text/javascript" src="/dist/js/index.app.js"></script>
+</body>
+
+  {% endraw %}
+</html>

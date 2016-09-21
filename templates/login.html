@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>login</title>
+  <link rel="stylesheet" href="/dist/css/login.app.css">
+</head>
+<body id="app">
+  <div id="login">
+    <div id="logo" class="ct">
+
+      <div class="logoImg ct"></div>
+      <div class="logoTitle">Watching Work</div>
+    </div>
+
+    <div id="userInput" class="ct">
+      <form class="/login" action="/login_interface" method="post">
+        <input type="text" name="username" class="username" value=""><i class="iconfont icon-yonghu"></i>
+        <input type="password" name="userpassword" class="userpassword" value=""><i class="iconfont icon-mima"></i>
+        <button type="submit" name="button">Enter</button>
+      </form>
+    </div>
+
+    <div id="other" class="ct">
+      <p class="ct">没有账号?&nbsp 现在<a href="/regist">注册</a></p>
+    </div>
+  </div>
+  <script type="text/javascript" src="/dist/lib/vue/dist/vue.min.js"></script>
+  <script type="text/javascript" src="/dist/js/login.app.js"></script>
+</body>
+</html>
